@@ -1,0 +1,2 @@
+class NegativeNumberError(Exception):
+    pass
