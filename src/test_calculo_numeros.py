@@ -9,4 +9,4 @@ class TestIngresoNumero(unittest.TestCase):
     def test_numero_valido(self, mocked_input):
         resultado = ingrese_numero()
         self.assertEqual(resultado, 100.0)
-##
+### 
