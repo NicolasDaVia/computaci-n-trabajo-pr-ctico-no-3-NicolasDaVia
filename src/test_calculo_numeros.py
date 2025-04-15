@@ -5,10 +5,9 @@ from excepcion import NegativeNumberError
 
 class TestIngresoNumero(unittest.TestCase):
 
-
-     @patch('builtins.input', return_value='-50')
-    def test_numero_negativo(self, mocked_input):
-        with self.assertRaises(NegativeNumberError):
+   @patch('builtins.input', return_value='ABC')
+    def test_entrada_no_numerica(self, mocked_input):
+        with self.assertRaises(ValueError):
             ingrese_numero()
 
 if __name__ == '__main__':
