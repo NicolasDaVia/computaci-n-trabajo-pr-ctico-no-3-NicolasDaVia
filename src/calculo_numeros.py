@@ -1,17 +1,5 @@
 from excepcion import NegativeNumberError
 
-def ingrese_numero():
-    
-    entrada = input("Ingrese un número positivo para validar: ")
-    try:
-        valor = float(entrada)
-    except ValueError:
-        raise ValueError("La entrada debe ser un número.")
-
-    if valor < 0:
-        raise NegativeNumberError("El número debe ser positivo.")
-
-    return valor
 
 def main():
     try:
